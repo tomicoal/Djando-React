@@ -29,7 +29,7 @@ function Form({ route, method }) {
                 navigate("/login"); // Navigate to the login page after successful registration
             }
         } catch (error) {
-            alert(error + `\nWrong Username or password.\nTry again.`); // Display an alert if an error occurs during form submission
+            alert(error); // Display an alert if an error occurs during form submission
         } finally {
             setLoading(false); // Set loading state back to false after submission is complete
         }
